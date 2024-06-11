@@ -72,7 +72,7 @@ jobs:
         path: bicep-template
         
    #Login in your azure subscription using a service principal (credentials stored as GitHub Secret in repo)
-    - name: Douwgrade Az.Accounts workaround
+    - name: Downgrade Az.Accounts workaround
       uses: azure/login@v2
       with:
         creds: ${{ secrets.AZURE_CREDENTIALS }}
